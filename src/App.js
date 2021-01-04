@@ -7,7 +7,6 @@ import CheckOut from './Container/CheckOut/CheckOut'
 import {Route,Switch} from 'react-router-dom'
 import ContactData from './Container/CheckOut/ContactData/ContactData'
 import NoMatch from './NoMatch'
-import One from './One'
 
 class App extends Component{
   componentDidMount(){
@@ -25,7 +24,7 @@ return (
   <Switch>
     <Route path='/' exact component={BurgerBuilder} />
     <Route path='/checkout' exact component={CheckOut} />
-    {/* <Route path='/checkout/contact-data' exact component={ContactData} />  */}
+    <Route path='/checkout/contact-data' exact component={ContactData} /> 
     <Route path component={NoMatch} />    
   </Switch>
 </Layout>
