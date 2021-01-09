@@ -1,10 +1,10 @@
 import React from 'react'
 import classes from './BuildControls.module.css'
 import BuildControl from './BuildControl/BuildControl'
-
+import {Button} from "antd"
 
 function BuildControls(props) {
-
+console.log('PRICE',props.price)
     const controls=[
         {label:'Salad', type:'salad'},
         {label:'Bacon', type:'bacon'},

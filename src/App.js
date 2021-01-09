@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
 import classes from './App.module.css'
 import Layout from './Component/Layout/Layout'
 import BurgerBuilder from './Container/BurgerBuilder/BurgerBuilder'
@@ -8,17 +8,16 @@ import {Route,Switch} from 'react-router-dom'
 import ContactData from './Container/CheckOut/ContactData/ContactData'
 import NoMatch from './NoMatch'
 
-class App extends Component{
-  componentDidMount(){
-axois.get('https://jsonplaceholder.typeicode.com/posts')
-.then(response=>{
-  console.log(response)
-})
+const  App = ()=> {
+  useEffect(()=>{
+    axois.get('https://jsonplaceholder.typeicode.com/posts')
+    .then(response=>{
+      console.log(response)
+    })
+  },[])
 
-  }
-render(){
+  
 return (
-
 <> 
 <Layout>
   <Switch>
@@ -33,7 +32,6 @@ return (
 )
 }
 
-}
 
 export default App
 

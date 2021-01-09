@@ -3,6 +3,7 @@ import React from 'react'
 import Button from '../UI/Button/Button'
 
 function OrderSummery(props) {
+    console.log(props.price)
 const ingredientSummery = Object.keys(props.ingredients)
 .map((igKey) =>{
 return (

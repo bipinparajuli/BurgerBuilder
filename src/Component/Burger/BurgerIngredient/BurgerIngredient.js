@@ -4,7 +4,7 @@ import PropsTypes from 'prop-types'
 
 function BurgerIngredient(props) {
     let ingredient= null;
-console.log(props.type)
+// console.log(props.type)
     switch(props.type){
         case('bread-bottom'):
         ingredient=<div className={classes.BreadBottom}></div>
